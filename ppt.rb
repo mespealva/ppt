@@ -35,22 +35,19 @@ def player2(p2)
     end  
 end
 def ppt(p1, p2)
+    p1=p1*2
+    p2=p2*2
     if p1==p2
         puts "empate"
-    else
-        p1=p1*2
-        p2=p2*2
-        case p1 p2
-        when p1+p2==6
-            puts "p2 gano" if p1<p2
-            puts "p1 gano" if p2<p1
-        when p1+p2==8
-            puts "p1 gano" if p1<p2
-            puts "p2 gano" if p2<p1
-        when p1+p2==10
-            puts "p1 gano" if p1<p2
-            puts "p2 gano" if p2<p1
-        end
+    elsif p1+p2==6
+        puts "p2 gano" if p1<p2
+        puts "p1 gano" if p2<p1
+    elsif p1+p2==8
+        puts "p1 gano" if p1<p2
+        puts "p2 gano" if p2<p1 
+    elsif p1+p2==10
+        puts "p1 gano" if p1<p2
+        puts "p2 gano" if p2<p1    
     end
 end
 
